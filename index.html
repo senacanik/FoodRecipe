@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tarif Defteri</title>
+    <link rel="stylesheet" href="dist/c/style.css">
+    <link rel="stylesheet" href="dist/c/bootstrap-min.css">
+</head>
+<body>
+
+    <div class="menu mb-5">
+        <nav class="navbar navbar-expand-lg bg-body-tertiary">
+            <div class="container-fluid">
+              <a class="navbar-brand" href="#">Recipe Book</a>
+              <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+              </button>
+              <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                  <li class="nav-item">
+                    <a class="nav-link active" aria-current="page" href="#">Home</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link active" aria-current="page" href="#">Find Recipe</a>
+                  </li>
+                  <li class="nav-item dropdown">
+                    <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                        Categories
+                    </a>
+                    <ul class="dropdown-menu">
+                        <li><a class="dropdown-item" href="#">Main Dishes</a></li>
+                        <li><a class="dropdown-item" href="#">Soups</a></li>
+                        <li><a class="dropdown-item" href="#">Salads</a></li>
+                        <li><a class="dropdown-item" href="#">Breakfast</a></li>
+                        <li><a class="dropdown-item" href="#">Snacks</a></li>
+                        <li><a class="dropdown-item" href="#">Desserts</a></li>
+                        <li><a class="dropdown-item" href="#">Pastries</a></li>
+                        <li><a class="dropdown-item" href="#">Healthy Recipes</a></li>
+                        <li><a class="dropdown-item" href="#">Quick & Easy Recipes</a></li>
+                        <li><a class="dropdown-item" href="#">World Cuisine</a></li>
+                        <li><a class="dropdown-item" href="#">Drinks</a></li>
+                        <li><a class="dropdown-item" href="#">Special Occasion Recipes</a></li>
+                        
+                      <li><hr class="dropdown-divider"></li>
+                      <li><a class="dropdown-item" href="#">Something else here</a></li>
+                    </ul>
+                  </li>
+                </ul>
+              </div>
+            </div>
+          </nav>
+    </div>
+
+
+
+    <div class="recipe-book-content">
+        <div class="container">
+            <div class="row">
+                <div class="col-12 mb-4">
+                    <div class="px-5 py-5 border border-light-subtle">
+                       <div class="section-titles">
+                        <h3 class="text-center">
+                            <small class="text-body-secondary">Choose the ingredients</small>
+                            you have at home and we will suggest a recipe
+                        </h3>
+                        <p class="lead text-center"> Select the ingredients available and list the recipes to see what dishes you can make with the ingredients you have at home! </p>
+                       </div>
+                    </div>
+                </div>
+                <div class="col-12 mb-4">
+                  <div class="material-search">
+                    <ul id="ingredient-list"></ul>
+                    <div class="input-group mb-3">
+                      <input type="text" class="form-control" placeholder="Write material" id="search-input">
+                      <button type="button" class="btn btn-outline-success" id="search-button">Get Recipe</button>
+                    </div>
+                  </div>
+               
+
+                </div>
+            </div>
+            <div id="search-results">
+              
+            </div>
+        </div>
+    </div>
+
+    <script src="dist/j/bootstrap-min.js"></script>
+    <script type="module" src="dist/j/script.js"></script>
+</body>
+</html>
